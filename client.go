@@ -69,6 +69,7 @@ func doRequest(ctx context.Context, req *http.Request) (*http.Response, error) {
 
 // Config is client configuration that contains all required client details to communicate with OIDC server.
 type Config struct {
+	Audience     string
 	ClientID     string
 	ClientSecret string
 	RedirectURL  string
@@ -296,6 +297,9 @@ func (c *Client) Exchange(ctx context.Context, cfg Config, code string, extra ..
 		"grant_type":   {GrantTypeAuthCode},
 		"code":         {code},
 		"redirect_uri": {cfg.RedirectURL},
+	}
+	if cfg.Audience != "" {
+		v.Set("audience", cfg.Audience)
 	}
 
 	for _, e := range extra {
