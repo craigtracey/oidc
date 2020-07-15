@@ -53,3 +53,5 @@ require (
 	k8s.io/apimachinery v0.0.0-20170729134451-dc1f89aff9a7
 	k8s.io/client-go v0.0.0-20170801234653-45673e060eb9
 )
+
+replace github.com/bwplotka/oidc => github.com/craigtracey/oidc v0.5.1-0.20200714041916-185db05914d7
