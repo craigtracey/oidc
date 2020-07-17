@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/bwplotka/go-jwt"
-	"github.com/bwplotka/oidc"
+	"github.com/craigtracey/oidc"
 	"github.com/stretchr/testify/require"
 	"gopkg.in/square/go-jose.v2"
 )

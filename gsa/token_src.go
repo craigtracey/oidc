@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bwplotka/oidc"
+	"github.com/craigtracey/oidc"
 	"github.com/pkg/errors"
 )
 

@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bwplotka/oidc"
+	"github.com/craigtracey/oidc"
 )
 
 //go:generate mockery -name Cache -case underscore -inpkg

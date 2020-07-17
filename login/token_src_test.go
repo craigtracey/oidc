@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bwplotka/oidc"
+	"github.com/craigtracey/oidc"
 	"github.com/bwplotka/oidc/testing"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

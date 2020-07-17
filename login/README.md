@@ -10,9 +10,9 @@ import (
     "context"
     "log"
     "os"
-    
-    "github.com/bwplotka/oidc/login"
-    "github.com/bwplotka/oidc/login/diskcache"
+
+    "github.com/craigtracey/oidc/login"
+    "github.com/craigtracey/oidc/login/diskcache"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
         // Make sure you ask for offline_access if you want to use refresh tokens!
         Scopes: []string{"openid", "email", "profile", "offline_access"},
     }
-    
+
     sourceConfig := login.Config{
         BindAddress: "http://127.0.0.1:8883",
         NonceCheck: true,
@@ -41,12 +41,12 @@ func main() {
 	if err != nil {
 	 // handle err...
 	}
-	
+
 	// Use your token!
 	token.AccessToken
 	token.IDToken,
 	token.RefreshToken
-	
+
 }
 ```
 
